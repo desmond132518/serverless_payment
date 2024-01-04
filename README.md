@@ -2,4 +2,4 @@
 
 Serverless payments with Stripe and Netlify functions.
 
-Companion code for the article.
+https://serverless-payment.netlify.app/
