@@ -1,6 +1,5 @@
 // Manage your variables with style: https://www.netlify.com/blog/2021/07/12/managing-environment-variables-from-your-terminal-with-netlify-cli/
 const stripe = require("stripe")(process.env.STRIPE_SECRET);
-console.log(process.env.STRIPE_SECRET);
 
 exports.handler = async (event, context) => {
     const session = await stripe.checkout.sessions.create({
