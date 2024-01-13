@@ -15,6 +15,26 @@ exports.handler = async (event, context) => {
                 },
                 quantity: 1,
             },
+            {
+                price_data: {
+                    currency: "cad",
+                    product_data: {
+                        name: "whiskey",
+                    },
+                    unit_amount: 20000,
+                },
+                quantity: 1,
+            },
+            {
+                price_data: {
+                    currency: "cad",
+                    product_data: {
+                        name: "Pizza",
+                    },
+                    unit_amount: 2100,
+                },
+                quantity: 1,
+            },
         ],
         mode: "payment",
         success_url: "https://serverless-payment.netlify.app/success",
